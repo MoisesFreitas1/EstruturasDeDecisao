@@ -12,6 +12,6 @@ else:
     for i in range(0,(periodo-1)):
         montante = montante*(1+txJuros)+acrescimo
 
-rendimento = montante - deposito
+rendimento = montante - deposito - (acrescimo*periodo)
 print("\nRendimento: R$%.2f"%rendimento)
 print("Montante: R$%.2f"%montante)
